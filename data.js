@@ -1,5 +1,6 @@
 // DAILY NUMBERS. Set  added: 1350  for a day. null = not logged yet. Notes are optional.
 const DAYS = [
+  { date: "2026-09-24", added: null, note: "" },
   { date: "2026-09-25", added: null, note: "" },
   { date: "2026-09-26", added: null, note: "" },
   { date: "2026-09-27", added: null, note: "" },
