@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Target Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 id="title"></h1>
+    <div class="actions">
+      <button id="copyBtn" class="btn">Copy data.js</button>
+      <button id="setBtn" class="btn ghost">Customize</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="muted" id="range"></p>
+      <div id="balNow" class="bal"></div>
+      <p class="muted" id="balSub"></p>
+    </div>
+    <dl id="stats"></dl>
+  </section>
+
+  <div id="strip" class="strip" aria-label="Day-by-day status"></div>
+  <div class="goal">
+    <div class="bar big"><i id="goalBar"></i></div>
+    <p class="muted" id="goalTxt"></p>
+  </div>
+
+  <div class="tablewrap"><table id="tbl"><thead></thead><tbody></tbody></table></div>
+  <p class="muted foot">Type an amount in "Added today" and press Enter. To keep it, use Copy data.js and paste it over data.js in your repo.</p>
+</div>
+
+<aside id="drawer" class="drawer" aria-label="Customize">
+  <div class="dh"><h2>Customize</h2><button id="closeBtn" class="btn ghost">Close</button></div>
+  <h3>Theme</h3><div id="themes" class="chips"></div>
+  <h3>Accent colour</h3>
+  <div class="row"><input type="color" id="accent" value="#0f7a5a"><button id="resetAccent" class="btn ghost">Reset</button></div>
+  <h3>Columns</h3><div id="colToggles" class="toggles"></div>
+  <h3>Paste into config.js to keep this look</h3><pre id="cfgOut"></pre>
+</aside>
+<div id="toast" role="status"></div>
+
+<script src="config.js"></script>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
