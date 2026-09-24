@@ -8,7 +8,7 @@ const CONFIG = {
   stretchTarget: 1500,       // the "even better" amount
   currency: "₹",
   locale: "en-IN",           // Indian digit grouping: 1,00,000
-  theme: "ledger",           // ledger | slate | midnight | plum | ember
+  theme: "midnight",           // ledger | slate | midnight | plum | ember
   accent: "",                // optional custom colour, e.g. "#d6336c"
   // Columns shown, in this order. Options:
   // day date open added close status progress plan note
